@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Title</title>
+    <script type="text/javascript" src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+</head>
+<body>
+<div id="login_container"></div>
+<script type="text/javascript">
+    //使用微信的js创建二维码，需要填写的参数是 APPID，redirect_uri
+    var obj = new WxLogin({
+        self_redirect:true,
+        id:"login_container",
+        appid: "应用ID",
+        scope: "snsapi_login",
+        redirect_uri: "回调地址",
+        state: "xxx",
+        style: "white",
+        href: ""
+    });
+</script>
+</body>
+</html>

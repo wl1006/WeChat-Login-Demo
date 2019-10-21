@@ -1,0 +1,9 @@
+server:
+  port: 80
+spring:
+  #模板的配置
+  jetbrick:
+    template:
+      charset: UTF-8
+      enabled: true
+      cache: false
